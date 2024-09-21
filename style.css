@@ -1,0 +1,93 @@
+:root {
+    /* Primary */
+    --Green: hsl(75, 94%, 57%);
+
+    /* Neutral */ 
+    --Dark_Grey: hsl(0, 0%, 12%);
+    --Off_Black: hsl(0, 0%, 8%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    font-family: Inter;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--Off_Black);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Dark_Grey);
+    border-radius: 15px;
+    width: 300px;
+    padding: 30px;
+}
+
+main > section.topCard {
+    text-align: center;
+}
+
+main > section.topCard img {
+    border-radius: 50%;
+    width: 80px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+h1, h2 {
+    padding: 4px;
+}
+
+p.ptop {
+    color: rgb(172, 172, 172);
+    margin: 20px 0px 25px 0px;
+    font-size: 13px;
+}
+
+section.bottomCard > ul {
+    flex-direction: column;
+    display: flex;
+    gap: 16px;
+}
+
+section.bottomCard > ul li {
+    background-color: var(--Grey);
+    transition: 500ms;
+    list-style-type: none;
+    border-radius: 10px;
+}
+
+section.bottomCard > ul li a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 13px 0px;
+    font-size: 14px;
+    display: block;
+    color: #fff;
+}
+
+section.bottomCard > ul li:hover {
+    background-color: var(--Green);
+}
+
+section.bottomCard > ul li a:hover {
+    color: var(--Grey);
+}
